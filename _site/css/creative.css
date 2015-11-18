@@ -11,11 +11,11 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: 'Droid Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 hr {
-    max-width: 50px;
+    max-width: 71px;
     border-color: #f05f40;
     border-width: 3px;
 }
@@ -42,13 +42,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Droid Sans', 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 p {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
+    font-family: 'Droid Sans'
 }
 
 .bg-primary {
@@ -62,6 +63,16 @@ p {
 
 .text-faded {
     color: rgba(255,255,255,.7);
+}
+
+
+.text-normal{
+    color: #222;
+    text-align: left;
+}
+
+.text-grey{
+    color: #98AFC7;
 }
 
 section {
@@ -211,6 +222,23 @@ header .header-content .header-content-inner p {
     color: rgba(255,255,255,.7);
 }
 
+
+.list-group{
+    color: #fff;
+    background-color: #222;
+}
+
+.list-group-item{
+    color: #fff;
+    background-color: #222;
+    border-color: gray;
+}
+
+.list-group-item.active { 
+    background-color: #223;
+    border-color: gray; 
+}
+
 @media(min-width:768px) {
     header {
         min-height: 100%;
@@ -334,7 +362,7 @@ header .header-content .header-content-inner p {
 .btn-default {
     border-color: #fff;
     color: #222;
-    background-color: #fff;
+    background-color: #d7d7d7;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -474,3 +502,5 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+
