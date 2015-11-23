@@ -234,7 +234,7 @@ header .header-content .header-content-inner p {
     border-color: gray;
 }
 
-.list-group-item.active { 
+.list-group-item.active, .list-group-item.active:hover{ 
     background-color: #223;
     border-color: gray; 
 }
