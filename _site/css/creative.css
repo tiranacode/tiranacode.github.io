@@ -134,7 +134,6 @@ aside {
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: rgba(255,255,255,.3);
         background-color: transparent;
     }
 
@@ -189,7 +188,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/header.jpeg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -234,7 +233,7 @@ header .header-content .header-content-inner p {
     border-color: gray;
 }
 
-.list-group-item.active { 
+.list-group-item.active, .list-group-item.active:hover{ 
     background-color: #223;
     border-color: gray; 
 }
