@@ -98,7 +98,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand {
     font-family: 'Source Code Pro', 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     color: #f05f40;
 }
 
@@ -158,10 +158,11 @@ aside {
     .navbar-default.affix {
         border-color: rgba(34,34,34,.05);
         background-color: #fff;
+        border-bottom-color: #f05f40;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
-        font-size: 14px;
+        font-size: 18px;
         color: #f05f40;
     }
 
