@@ -17,19 +17,15 @@
 	vertical-align: top;
 }
 
-/* Footer left */
 
-.footer-distributed .footer-left{
-	width: 40%;
-}
 
 /* The company logo */
 
-.footer-distributed h3{
+.footer-distributed h4{
 	color:  #F05F40;
-	font: normal 29px 'Droid Sans', cursive;
+	font: normal 25px, cursive;
 	margin: 0;
-	font-family: 'Droid Sans'
+	font-family: 'Source Code Pro'
 }
 
 .footer-distributed h3 span{
@@ -42,57 +38,54 @@
 	color:  #ffffff;
 	margin: 20px 0 12px;
 	padding: 0;
+	text-decoration: none;
 }
 
 .footer-distributed .footer-links a{
 	display:inline-block;
 	line-height: 1.7;
-	text-decoration: none;
 	color:  inherit;
 }
 
 .footer-distributed .footer-company-name{
 	color:  #8f9296;
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
 }
 
 /* Footer Center */
 
-.footer-distributed .footer-center{
-	width: 35%;
-}
-
 .footer-distributed .footer-center i{
 	background-color:  #33383b;
 	color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
+	font-size: 15px;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	text-align: center;
-	line-height: 42px;
+	line-height: 32px;
 	margin: 10px 15px;
 	vertical-align: middle;
 }
 
 .footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
+	font-size: 13px;
+	line-height: 30px;
 }
 
 .footer-distributed .footer-center p{
 	display: inline-block;
-	color: #ffffff;
+	color: #92999f;
 	vertical-align: middle;
+	font-size: 15px;
 	margin:0;
 }
 
 .footer-distributed .footer-center p span{
 	display:block;
 	font-weight: normal;
-	font-size:14px;
+	font-size:15px;
 	line-height:2;
 }
 
@@ -104,9 +97,6 @@
 
 /* Footer Right */
 
-.footer-distributed .footer-right{
-	width: 20%;
-}
 
 .footer-distributed .footer-company-about{
 	line-height: 20px;
@@ -125,25 +115,27 @@
 }
 
 .footer-distributed .footer-icons{
-	margin-top: 25px;
+	margin-top: 20px;
 }
 
 .footer-distributed .footer-icons a{
 	display: inline-block;
-	width: 35px;
-	height: 35px;
+	width: 30px;
+	height: 30px;
 	cursor: pointer;
 	background-color:  #33383b;
 	border-radius: 2px;
 
-	font-size: 20px;
+	font-size: 15px;
 	color: #ffffff;
 	text-align: center;
-	line-height: 35px;
+	line-height: 30px;
 
-	margin-right: 3px;
+	margin-right: 5px;
 	margin-bottom: 5px;
 }
+
+
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
@@ -158,8 +150,8 @@
 	.footer-distributed .footer-right{
 		display: block;
 		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
+		margin-bottom: 20px;
+		text-align: left;
 	}
 
 	.footer-distributed .footer-center i{
