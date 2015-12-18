@@ -512,3 +512,8 @@ body {
 }
 
 
+.placeholder(@color: @input-color-placeholder) {
+  &::-moz-placeholder           { color: #fff; } // Firefox
+  &:-ms-input-placeholder       { color: #fff; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: #fff; } // Safari and Chrome
+}

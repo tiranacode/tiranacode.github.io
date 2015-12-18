@@ -1,3 +1,18 @@
+.form-control{
+	background-color: transparent;
+	border-color: white;
+	color: white;
+	border-radius: 0px;
+}
+
+
+.form-control::-webkit-input-placeholder { color: white; }
+.form-control:-moz-placeholder { color: white; }
+.form-control::-moz-placeholder { color: white; }
+.form-control:-ms-input-placeholder { color: white; }
+
+
+
 .footer-distributed{
 	background-color: #222;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -7,8 +22,7 @@
 	font-family: 'Droid Sans';
 	font:  16px ;
 	padding: 55px 50px;
-	margin-top: 80px;
-}
+	margin-top:0px}
 
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
