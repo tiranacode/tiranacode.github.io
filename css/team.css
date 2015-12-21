@@ -6,6 +6,7 @@ Licensed under MIT
 
 .content {
     padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 /* Heading */
@@ -102,7 +103,7 @@ Licensed under MIT
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #FF470B;
+    color: yellow;
 }
 
 .team-members:hover .team-avatar:after {
