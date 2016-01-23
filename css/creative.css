@@ -189,7 +189,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpeg);
+    background-image: url(../img/header0.JPG);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -200,7 +200,7 @@ header {
 header .header-content {
     position: relative;
     width: 100%;
-    padding: 100px 15px;
+    padding: 0px 0px;
     text-align: center;
 }
 
@@ -264,13 +264,12 @@ header .header-content .header-content-inner p {
     header .header-content .header-content-inner {
         margin-right: auto;
         margin-left: auto;
-        max-width: 1000px;
     }
 
     header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
-        max-width: 80%;
+        max-width: 100%;
         font-size: 18px;
     }
 }
@@ -517,3 +516,26 @@ body {
   &:-ms-input-placeholder       { color: #fff; } // Internet Explorer 10+
   &::-webkit-input-placeholder  { color: #fff; } // Safari and Chrome
 }
+
+
+.box {
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px 25px;
+    display: block;
+    margin-top: 60px;
+    background: #fff;
+}
+
+#subscribe-header{
+    margin-top: 100px;
+}
+
+
+.box-icon span {
+    color: #fff;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
