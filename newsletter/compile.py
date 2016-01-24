@@ -7,7 +7,7 @@ STATIC_FOLDER = 'static'
 ARTICLES_BASEDIR = os.path.join(STATIC_FOLDER, 'articles')
 TEMPLATES_BASEDIR = os.path.join(STATIC_FOLDER, 'templates')
 OUTPUTS_BASEDIR = os.path.join(STATIC_FOLDER, 'output')
-TEMPLATE = "template.tpl"
+TEMPLATE = "template2.tpl"
 
 
 TEMPLATE_LOADER = FileSystemLoader(searchpath=TEMPLATES_BASEDIR)

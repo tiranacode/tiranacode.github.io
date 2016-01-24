@@ -134,7 +134,9 @@
   </head>
 
 
-  <body style="margin:0; padding:0;" bgcolor="#F0F0F0" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+ <body style="margin:0; padding:0;" bgcolor="#F0F0F0" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
     <!-- 100% background wrapper (grey background) -->
     <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#F0F0F0">
       <tr>
@@ -144,7 +146,7 @@
             <tr>
               <td class="container-padding header" align="left" style="font-family: Source Code Pro, Roboto, sans-serif;font-size:24px;padding-bottom:12px;color:#ffffff;padding-left:24px;padding-right:24px; background-color:#333333">
                 <br>
-                <a href="http://tiranacode.github.io" style="color:#ff6b33">> tirana code_</a> Newsletter #1
+                <a href="http://tiranacode.github.io" style="color:#ff6b33">> tirana code_</a> Newsletter #{{newsletter.issue}}
                 <br>
               </td>
             </tr>
@@ -153,8 +155,8 @@
 <!-- INTRO --> 
               <td class="container-padding intro-section" align="left">
                 <br>
-                <p class="intro-title">Hera e pare eshte gjithmone e sikletshme</h3>
-                  <p class="intro-message">C'kemi. Ky eshte newsletter-i i pare nga Tirana Code. Nga gjithcka lexuam kete jave, c'ka vijon me poshte perfaqeson ate qe zgjodhem si hyrje te mire mbi permbajtjen e newsletter-ave tone. Na thoni si ju duken.</p>
+                <p class="intro-title">{{newsletter.title}}</h3>
+                  <p class="intro-message">{{newsletter.desc}}</p>
                   <br>
                 </td>
               </tr>
@@ -166,57 +168,26 @@
                 <td class="container-padding content" align="left" style="padding-left:24px;padding-right:24px;padding-top:12px;padding-bottom:20px;background-color:#ffffff">
                   <br>
 
-<!-- ARTIKULLI 1 -->
+                {% for article in newsletter.articles %}
+
+<!-- ARTIKULLI -->
                   <hr align="left">
-                  <p class="tags">#Ide #Startups</p>
+                  <p class="tags"> {% for tag in article.tags %} #{{tag}} {% endfor %} </p>
                   <div class="article-title">
-                    <a href="#" target="_blank">Why I Quit My Dream Job at Ubisoft</a>
+                    <a href="#" target="_blank"> {{article.title}} </a>
                   </div>
                   <br>
                   <div class="article-description">
-                    <p>
-                      Nje ish-punonjes i Ubisoft shpjegon pse la punen e endrrave te tij per te nisur nje kompani te vogel.
-                    </p>
+                    <p>{{article.desc}}</p>
                     <br><br>
                   </div>
-<!-- ARTIKULLI 1 -->
-
-
-<!-- ARTIKULLI 2 -->
-                  <hr align="left">
-                  <p class="tags">#StartUps</p>
-                  <div class="article-title">
-                    <a href="#" target="_blank">Ideas for Startups</a>
-                  </div>
-                  <br>
-                  <div class="article-description">
-                    <p>Paul Graham flet per rendesine e mbivleresuar te ideve fillestare ne nisjen e nje startup-i dhe per cfare ka vertete rendesi.
-                    </p>
-                    <br><br>
-                  </div>
-<!-- ARTIKULLI 2 -->
-                  
-
-<!-- ARTIKULLI 3 -->
-                  <hr align="left">
-                  <p class="tags">#JavaScript</p>
-                  <div class="article-title" >
-                    <a href="#" target="_blank">Javascript: The Good Parts</a>
-                  </div>
-                  <br>
-                  <div class="article-description">
-                    <p>
-                      Seri me video-leksione nga Douglas Crockford per gjithcka duhet te dini mbi Javascript, duke perfshire dhe kontekstin historik te zhvillimit te gjuhes.
-                    </p>
-                    <br><br>
-                  </div>
-<!-- ARTIKULLI 3 -->
-
-
+<!-- ARTIKULLI-->
+				{% endfor %}
+				
                 </td>
               </tr>
 
-
+<!-- CONTENT -->
 
 
 <!-- FOOTER -->
@@ -243,3 +214,87 @@
 
     </body>
   </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<body style="margin:0; padding:0;" bgcolor="#F0F0F0" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+		<!-- 100% background wrapper (grey background) -->
+		<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#F0F0F0">
+			<tr>
+				<td align="center" valign="top" bgcolor="#F0F0F0" style="background-color: #F0F0F0;">
+					<br>
+					<!-- 600px container (white background) -->
+					<table border="0" width="600" cellpadding="0" cellspacing="0" class="container" style="width:600px;max-width:600px">
+						<tr>
+							<td class="container-padding header" align="left" style="font-family:Helvetica, Arial, sans-serif;font-size:24px;font-weight:bold;padding-bottom:12px;color:#ff6b33;padding-left:24px;padding-right:24px; background-color:#333333">
+								<br>
+								Tirana Code Newsletter #{{newsletter.issue}}
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td class="container-padding header" align="left" style="font-family: Helvetica, Arial, sans-serif; font-size:14px; padding-bottom:12px;color:#ffffff;padding-left:24px;padding-right:24px; background-color:#666666">
+								<br>
+								<h3>{{newsletter.title}}</h3>
+								<p>{{newsletter.desc}}</p>
+								<br>
+							</td>
+						</tr>
+						<!-- CONTENT -->
+						<tr>
+							<td class="container-padding content" align="left" style="padding-left:24px;padding-right:24px;padding-top:12px;padding-bottom:20px;background-color:#ffffff">
+								<br>
+								{% for article in newsletter.articles %}
+									<hr align="left">
+									<p class="tags">{% for tag in article.tags %} #{{tag}} {% endfor %}</p>
+									<div class="title" style="font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:600;color:#374550">
+										<a href="{{article.url}}">{{article.title}}</a>
+									</div>
+									<br>
+									<div class="body-text" style="font-family:Helvetica, Arial, sans-serif;font-size:14px;line-height:20px;text-align:left;color:#333333">
+										{{article.desc}}
+										<br><br>
+									</div>
+								{% endfor %}
+							</td>
+						</tr>
+						<!-- FOOTER -->
+						<tr>
+							<td class="container-padding footer-text" align="left" style="font-family:Helvetica, Arial, sans-serif;font-size:12px;line-height:16px;color:#aaaaaa;padding-left:24px;padding-right:24px; background-color:#333333">
+								<br>
+								© 2016 <a href="http://tiranacode.github.io" target="_blank" style="color:#aaaaaa; text-decoration:underline">Tirana Code</a>. Na ndiqni ne <a href="http://www.facebook.com/tiranacode/" target="_blank" style="color:#aaaaaa; text-decoration:underline"> Facebook </a>
+								<br>
+								<br>
+								Ju po e merrni kete email sepse jeni abonuar ne email-in e perjavshem te Tirana Code. Ndryshoni <a href="*|UPDATE_PROFILE|*" style="color:#aaaaaa; text-decoration:underline">email preferences</a> ose <a href="*|UNSUB|*" style="color:#aaaaaa; text-decoration:underline">unsubscribe</a>.
+								<br><br>
+								<!-- FOOTER -->
+							</td>
+						</tr>
+					</table>
+					<!--/600px container -->
+				</td>
+			</tr>
+		</table>
+		<!--/100% background wrapper-->
+	</body>
+</html>
