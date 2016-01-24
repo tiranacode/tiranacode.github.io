@@ -8,16 +8,15 @@ ARTICLES_BASEDIR = os.path.join(STATIC_FOLDER, 'articles')
 TEMPLATES_BASEDIR = os.path.join(STATIC_FOLDER, 'templates')
 OUTPUTS_BASEDIR = os.path.join(STATIC_FOLDER, 'output')
 TEMPLATE = "template.tpl"
-OUTPUT = "newsletter.html"
 
 
-TEMPLATE_LOADER = FileSystemLoader( searchpath=TEMPLATES_BASEDIR )
+TEMPLATE_LOADER = FileSystemLoader(searchpath=TEMPLATES_BASEDIR)
 ENV = Environment(loader=TEMPLATE_LOADER)
 
 
 parser = argparse.ArgumentParser(description='Compile the newsletter')
 parser.add_argument('datafiles', metavar='datafiles', type=str, nargs='+',
-                   help='the file(s) containing the articles. (e.g: issue1.json)')
+                   help='the json file(s) containing the articles. (e.g: issue1.json)')
 parser.add_argument('--tpl', dest='template', action='store',
                    default=TEMPLATE,
                    help='The html template used for this newsletter. (default: %s)' % TEMPLATE)
@@ -37,8 +36,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
     for fname in args.datafiles:
         if not fname.endswith('.json'):
-            print "Only json files are acceptable"
-            sys.exit(1)
+            print "Skipping %s. Only json files are acceptable." % fname
+            continue
         out_fname = os.path.join(OUTPUTS_BASEDIR, "%s.html" % fname.split('.')[0])
         html = make_newsletter(args.template, fname)
         with open(out_fname, 'w') as out:
