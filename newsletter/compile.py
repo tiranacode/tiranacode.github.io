@@ -16,11 +16,11 @@ ENV = Environment(loader=TEMPLATE_LOADER)
 
 
 parser = argparse.ArgumentParser(description='Compile the newsletter')
-parser.add_argument('datafiles', metavar='datafile', type=str, nargs='+',
-                   help='the file(s) containing the articles')
-parser.add_argument('--tpl', dest='template', action='store_const',
-                   const=TEMPLATE, default=TEMPLATE,
-                   help='The html template used for this newsletter')
+parser.add_argument('datafiles', metavar='datafiles', type=str, nargs='+',
+                   help='the file(s) containing the articles. (e.g: issue1.json)')
+parser.add_argument('--tpl', dest='template', action='store',
+                   default=TEMPLATE,
+                   help='The html template used for this newsletter. (default: %s)' % TEMPLATE)
 
 def compile(template, data):
     tpl = ENV.get_template(template)
