@@ -7,46 +7,46 @@
     <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
     <title>Newsletter_Template</title>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:400,700' rel='stylesheet' type='text/css'>
-    
+
     <style type="text/css">
-    
+
     body {
     margin: 0;
     padding: 0;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     }
-    
+
     table {
     border-spacing: 0;
     }
-    
+
     table td {
     border-collapse: collapse;
     }
-    
+
     .ExternalClass {
     width: 100%;
     }
-    
+
     table a{
     color: #343434;
     text-decoration: none;
     }
-    
+
     table hr{
     size: 1px;
     width: 50%;
     background-color: #A0A0A0;
     }
-    
+
     .tags{
     margin-top: -5px;
     font-size: 12px;
     color:#A2A2A2;
     font-family: "Source Code Pro";
     }
-    
+
     .intro-section{
     padding-bottom: 12px;
     color: #ffffff;
@@ -54,21 +54,21 @@
     padding-right: 24px;
     background-color: #666666;
     }
-    
+
     .intro-title{
     font-family: 'Roboto', sans-serif;
     color: #fff;
     font-size: 17px;
     font-weight: 400;
     }
-    
+
     .intro-message{
     font-family: 'Roboto', sans-serif;
     color: #fff;
     font-size: 13px;
     font-weight: 400;
     }
-    
+
     .article-title a{
     font-family: 'Roboto', sans-serif;
     color: #333333;
@@ -76,7 +76,7 @@
     font-weight: 700;
     margin: 0;
     }
-    
+
     .article-description p{
     font-family: 'Roboto', sans-serif;
     color: #444444;
@@ -84,7 +84,7 @@
     margin: 0;
     margin-top: -10px;
     }
-    
+
     .ExternalClass,
     .ExternalClass p,
     .ExternalClass span,
@@ -93,24 +93,24 @@
     .ExternalClass div {
     line-height: 100%;
     }
-    
+
     .ReadMsgBody {
     width: 100%;
     background-color: #ebebeb;
     }
-    
+
     table {
     mso-table-lspace: 0pt;
     mso-table-rspace: 0pt;
-    }<!-- INTRO --> 
-    
+    }<!-- INTRO -->
+
     img {
     -ms-interpolation-mode: bicubic;
     }
     .yshortcuts a {
     border-bottom: none !important;
     }
-    
+
     @media screen and (max-width: 599px) {
     .force-row,
     .container {
@@ -118,14 +118,14 @@
     max-width: 100% !important;
     }
     }
-    
+
     @media screen and (max-width: 400px) {
     .container-padding {
     padding-left: 12px !important;
     padding-right: 12px !important;
     }
     }
-    
+
     .ios-footer a {
     color: #aaaaaa !important;
     text-decoration: underline;
@@ -152,7 +152,7 @@
             </tr>
             <tr>
 
-<!-- INTRO --> 
+<!-- INTRO -->
               <td class="container-padding intro-section" align="left">
                 <br>
                 <p class="intro-title">{{newsletter.title}}</h3>
@@ -160,7 +160,7 @@
                   <br>
                 </td>
               </tr>
-<!-- INTRO --> 
+<!-- INTRO -->
 
 
 <!-- CONTENT -->
@@ -174,7 +174,7 @@
                   <hr align="left">
                   <p class="tags"> {% for tag in article.tags %} #{{tag}} {% endfor %} </p>
                   <div class="article-title">
-                    <a href="#" target="_blank"> {{article.title}} </a>
+                    <a href="{{article.url}}" target="_blank"> {{article.title}} </a>
                   </div>
                   <br>
                   <div class="article-description">
@@ -183,7 +183,7 @@
                   </div>
 <!-- ARTIKULLI-->
 				{% endfor %}
-				
+
                 </td>
               </tr>
 
