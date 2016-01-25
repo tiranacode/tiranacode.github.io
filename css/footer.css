@@ -92,14 +92,14 @@
 	display: inline-block;
 	color: #92999f;
 	vertical-align: middle;
-	font-size: 15px;
+	font-size: 13px;
 	margin:0;
 }
 
 .footer-distributed .footer-center p span{
 	display:block;
 	font-weight: normal;
-	font-size:15px;
+	font-size:13px;
 	line-height:2;
 }
 
@@ -123,8 +123,7 @@
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
+	font-size: 15px;
 	margin-bottom: 20px;
 }
 

@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    font-family: 'Droid Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 hr {
@@ -43,14 +43,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Droid Sans', 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'Droid Sans'
+    font-family: 'Roboto', sans-serif;
 }
 
 .bg-primary {
@@ -90,7 +90,7 @@ aside {
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -98,7 +98,7 @@ aside {
 }
 
 .navbar-default .navbar-header .navbar-brand {
-    font-family: 'Source Code Pro', 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Source Code Pro';
     font-weight: 600;
     color: #ff6b33;
 }
@@ -112,7 +112,7 @@ aside {
 .navbar-default .nav>li>a:focus {
     text-transform: uppercase;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 500;
     color: #222;
 }
 
@@ -208,7 +208,7 @@ header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 header .header-content .header-content-inner hr {
@@ -326,7 +326,7 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -475,9 +475,8 @@ fieldset[disabled] .btn-primary.active {
 .btn {
     border: 0;
     border-radius: 300px;
-    text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
 }
 
 .btn-xl {
@@ -512,11 +511,16 @@ body {
 
 
 .placeholder(@color: @input-color-placeholder) {
-  &::-moz-placeholder           { color: #fff; } // Firefox
-  &:-ms-input-placeholder       { color: #fff; } // Internet Explorer 10+
-  &::-webkit-input-placeholder  { color: #fff; } // Safari and Chrome
+  &::-moz-placeholder           { color: #fff; font-family: "Roboto", sans-serif; font-weight: 300;} // Firefox
+  &:-ms-input-placeholder       { color: #fff; font-family: "Roboto", sans-serif; font-weight: 300;} // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: #fff; font-family: "Roboto", sans-serif; font-weight: 300;} // Safari and Chrome
 }
 
+input{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
 
 .box {
     border-radius: 3px;
