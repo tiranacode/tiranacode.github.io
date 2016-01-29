@@ -179,7 +179,7 @@
                   <br>
                   <div class="article-description">
                     <p>{{article.desc}}</p>
-                    <br><br>
+                    <br>
                   </div>
 <!-- ARTIKULLI-->
 				{% endfor %}
