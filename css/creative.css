@@ -227,6 +227,8 @@ header .header-content .header-content-inner p {
     color: #fff;
     background-color: #222;
     font-size: 14px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
 }
 
 .list-group-item{
@@ -375,6 +377,7 @@ header .header-content .header-content-inner p {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .btn-default:hover,
@@ -531,6 +534,19 @@ input{
     display: block;
     margin-top: 60px;
     background: #fff;
+}
+
+
+.box-primary {
+    border-radius: 3px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3), 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    padding: 100px 100px;
+    display: block;
+    background: #fff;
+}
+
+.content-primary{
+    background-color: #ff6b33
 }
 
 #subscribe-header{
